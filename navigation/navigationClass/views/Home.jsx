@@ -1,5 +1,6 @@
 import { View, Text, StyleSheet, Button } from "react-native";
 import React from "react";
+import CardProduto from "../components/CardProduto";
 
 const Home = ({ navigation, route }) => {
   let nome;
@@ -11,9 +12,10 @@ const Home = ({ navigation, route }) => {
 
   return (
     <View style={styles.container}>
-      <Text>Home</Text>
-      <Text>{nome}</Text>
-      <Button title="About" onPress={() => navigation.navigate("About")} />
+      <CardProduto />
+      <CardProduto />
+      <CardProduto />
+      <CardProduto />
     </View>
   );
 };
@@ -21,9 +23,8 @@ export default Home;
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: "#AF69EE",
     alignItems: "center",
-    justifyContent: "center",
+    height: "100%",
   },
 });
