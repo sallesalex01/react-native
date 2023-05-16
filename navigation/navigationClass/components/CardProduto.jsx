@@ -1,9 +1,9 @@
 import { StyleSheet, Text, View, Image, Pressable } from "react-native";
 import React from "react";
 
-const CardProduto = (navigation, route) => {
+const CardProduto = ({ navigation }) => {
   return (
-    <Pressable onPress={() => console.log("rola")}>
+    <Pressable onPress={() => navigation.navigate("InfoProduto", { id: 3 })}>
       <View style={styles.containerProduto}>
         <Image
           style={styles.imageProduto}

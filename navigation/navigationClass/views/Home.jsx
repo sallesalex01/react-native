@@ -3,19 +3,9 @@ import React from "react";
 import CardProduto from "../components/CardProduto";
 
 const Home = ({ navigation, route }) => {
-  let nome;
-  try {
-    nome = route.params.nome;
-  } catch (err) {
-    console.log(err);
-  }
-
   return (
     <View style={styles.container}>
-      <CardProduto />
-      <CardProduto />
-      <CardProduto />
-      <CardProduto />
+      <CardProduto navigation={navigation} />
     </View>
   );
 };
