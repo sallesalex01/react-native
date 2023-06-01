@@ -11,7 +11,7 @@ const RootProduct = () => {
       <BottomTab.Screen
         name="Product"
         component={InfoProduto}
-        options={{ headerShown: false }}
+        options={{ headerShown: true }}
       />
     </BottomTab.Navigator>
   );

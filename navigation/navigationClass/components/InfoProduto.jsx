@@ -5,7 +5,7 @@ const InfoProduto = ({ route }) => {
   let qualquerCoisa = route.params;
   return (
     <View>
-      <Text>ID: {qualquerCoisa}</Text>
+      <Text>Data: {qualquerCoisa}</Text>
     </View>
   );
 };

@@ -1,23 +1,23 @@
 import { StyleSheet, Text, View, Image, Pressable } from "react-native";
 import React from "react";
 
-const CardProduto = ({ navigation }) => {
+const CardProduto = ({ navigation, data }) => {
+  const { imagem, name, preco } = data;
   return (
     <Pressable
       style={styles.pressableContainer}
-      onPress={() => navigation.navigate("RootProduct")}
+      onPress={() => navigation.navigate("RootProduct", data)}
     >
       <View style={styles.containerProduto}>
         <Image
           style={styles.imageProduto}
           source={{
-            uri: "https://electrolux.vtexassets.com/arquivos/ids/218791/Refrigerator_IB45_Perspective_Electrolux_Portuguese-detalhe1.jpg?v=637836507941100000",
+            uri: { imagem },
           }}
         />
         <View style={styles.productInfo}>
-          <Text style={styles.productTextInfo}>1000RS</Text>
-          <Text>1000RS</Text>
-          <Text>1000RS</Text>
+          <Text style={styles.productTextInfo}>{name}</Text>
+          <Text>{preco}</Text>
         </View>
       </View>
     </Pressable>

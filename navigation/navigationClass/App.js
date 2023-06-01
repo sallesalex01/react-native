@@ -1,13 +1,9 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
-import InfoProduto from "./components/InfoProduto";
 import { createDrawerNavigator } from "@react-navigation/drawer";
-
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Home from "./views/Home";
 import RootProduct from "./views/RootProduct";
-import RootHome from "./views/RootHome";
 
 const Drawer = createDrawerNavigator();
 
@@ -16,7 +12,12 @@ export default function App() {
     <NavigationContainer>
       <StatusBar style="auto" />
       <Drawer.Navigator>
-        <Drawer.Screen name="Home" component={RootHome} />
+        <Drawer.Screen name="Home" component={Home} />
+        <Drawer.Screen
+          name="RootProduct"
+          component={RootProduct}
+          options={{ headerShown: false }}
+        />
       </Drawer.Navigator>
     </NavigationContainer>
   );
