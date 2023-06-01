@@ -3,7 +3,10 @@ import React from "react";
 
 const CardProduto = ({ navigation }) => {
   return (
-    <Pressable onPress={() => navigation.navigate("InfoProduto", { id: 3 })}>
+    <Pressable
+      style={styles.pressableContainer}
+      onPress={() => navigation.navigate("RootProduct")}
+    >
       <View style={styles.containerProduto}>
         <Image
           style={styles.imageProduto}
@@ -49,5 +52,9 @@ const styles = StyleSheet.create({
   productTextInfo: {
     // fontFamily: "sans-serif",
     fontSize: 20,
+  },
+  pressableContainer: {
+    width: 300,
+    height: 125,
   },
 });
