@@ -2,7 +2,7 @@ import { StyleSheet, Text, View, Image, Pressable } from "react-native";
 import React from "react";
 
 const CardProduto = ({ navigation, data }) => {
-  const { imagem, name, preco } = data;
+  const { imagem, nome, preco } = data;
   return (
     <Pressable
       style={styles.pressableContainer}
@@ -12,11 +12,11 @@ const CardProduto = ({ navigation, data }) => {
         <Image
           style={styles.imageProduto}
           source={{
-            uri: { imagem },
+            uri: imagem,
           }}
         />
         <View style={styles.productInfo}>
-          <Text style={styles.productTextInfo}>{name}</Text>
+          <Text style={styles.productTextInfo}>{nome}</Text>
           <Text>{preco}</Text>
         </View>
       </View>

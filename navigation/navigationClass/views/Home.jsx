@@ -12,6 +12,20 @@ const Home = ({ navigation, route }) => {
       imagem:
         "https://electrolux.vtexassets.com/arquivos/ids/218791/Refrigerator_IB45_Perspective_Electrolux_Portuguese-detalhe1.jpg?v=637836507941100000",
     },
+    {
+      id: 2,
+      nome: "Geladeira eletrolux",
+      preco: 1000,
+      imagem:
+        "https://electrolux.vtexassets.com/arquivos/ids/218791/Refrigerator_IB45_Perspective_Electrolux_Portuguese-detalhe1.jpg?v=637836507941100000",
+    },
+    {
+      id: 3,
+      nome: "Geladeira eletrolux",
+      preco: 1000,
+      imagem:
+        "https://electrolux.vtexassets.com/arquivos/ids/218791/Refrigerator_IB45_Perspective_Electrolux_Portuguese-detalhe1.jpg?v=637836507941100000",
+    },
   ];
 
   return (
