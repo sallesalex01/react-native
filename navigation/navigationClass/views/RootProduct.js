@@ -7,8 +7,8 @@ import InfoProduto from "../components/InfoProduto";
 const BottomTab = createBottomTabNavigator();
 
 const RootProduct = ({ route }) => {
-  const [estado, setEstado] = useState();
   let dados = route.params;
+  const [estado, setEstado] = useState(dados);
 
   useEffect(() => {
     setEstado(dados);

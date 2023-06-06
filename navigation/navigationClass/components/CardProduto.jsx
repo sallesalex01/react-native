@@ -1,11 +1,15 @@
 import { StyleSheet, Text, View, Image, Pressable } from "react-native";
 import React from "react";
 
-const CardProduto = ({ navigation, data, funcao }) => {
+const CardProduto = ({ navigation, data, onPressableClick }) => {
   const { imagem, nome, preco } = data;
 
   return (
-    <Pressable style={styles.pressableContainer} data onPress={funcao}>
+    <Pressable
+      style={styles.pressableContainer}
+      data
+      onPress={onPressableClick}
+    >
       <View style={styles.containerProduto}>
         <Image
           style={styles.imageProduto}

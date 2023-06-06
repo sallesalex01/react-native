@@ -7,7 +7,7 @@ import GenerateCardProduct from "../components/GenerateCardProduct";
 const Home = ({ navigation, route }) => {
   const [dados, setDados] = useState(dadosLoja);
 
-  const seila = (produto) => {
+  const NavigateToProduct = (produto) => {
     navigation.navigate("RootProduct", produto);
     console.log(produto.id);
   };
@@ -17,7 +17,7 @@ const Home = ({ navigation, route }) => {
       <GenerateCardProduct
         navigation={navigation}
         dados={dados}
-        funcaoAleatoria={seila}
+        onCardClick={NavigateToProduct}
       />
     </View>
   );

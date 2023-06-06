@@ -16,7 +16,7 @@ export default function App() {
         <Drawer.Screen
           name="RootProduct"
           component={RootProduct}
-          options={{ headerShown: false }}
+          options={{ headerShown: false, drawerLabelStyle: { height: 0 } }}
         />
       </Drawer.Navigator>
     </NavigationContainer>
