@@ -1,11 +1,13 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, Button } from "react-native";
 import React from "react";
 
-const InfoProduto = ({ route }) => {
+const InfoProduto = ({ navigation, route }) => {
   let qualquerCoisa = route.params;
+
   return (
     <View>
-      <Text>Data: {qualquerCoisa}</Text>
+      <Button title="Back" onPress={() => navigation.goBack()} />
+      <Text>Data: {qualquerCoisa.id}</Text>
     </View>
   );
 };

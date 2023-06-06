@@ -1,36 +1,24 @@
 import { View, Text, StyleSheet, Button } from "react-native";
+import { useState, useEffect } from "react";
+import dadosLoja from "../utils/dadosLoja";
 import React from "react";
-import CardProduto from "../components/CardProduto";
-import GenerateCardProduct from "../components/generateCardProduct";
+import GenerateCardProduct from "../components/GenerateCardProduct";
 
 const Home = ({ navigation, route }) => {
-  const data = [
-    {
-      id: 1,
-      nome: "Geladeira eletrolux",
-      preco: 1000,
-      imagem:
-        "https://electrolux.vtexassets.com/arquivos/ids/218791/Refrigerator_IB45_Perspective_Electrolux_Portuguese-detalhe1.jpg?v=637836507941100000",
-    },
-    {
-      id: 2,
-      nome: "Geladeira eletrolux",
-      preco: 1000,
-      imagem:
-        "https://electrolux.vtexassets.com/arquivos/ids/218791/Refrigerator_IB45_Perspective_Electrolux_Portuguese-detalhe1.jpg?v=637836507941100000",
-    },
-    {
-      id: 3,
-      nome: "Geladeira eletrolux",
-      preco: 1000,
-      imagem:
-        "https://electrolux.vtexassets.com/arquivos/ids/218791/Refrigerator_IB45_Perspective_Electrolux_Portuguese-detalhe1.jpg?v=637836507941100000",
-    },
-  ];
+  const [dados, setDados] = useState(dadosLoja);
+
+  const seila = (produto) => {
+    navigation.navigate("RootProduct", produto);
+    console.log(produto.id);
+  };
 
   return (
     <View style={styles.container}>
-      <GenerateCardProduct navigation={navigation} DATA={data} />
+      <GenerateCardProduct
+        navigation={navigation}
+        dados={dados}
+        funcaoAleatoria={seila}
+      />
     </View>
   );
 };
@@ -38,8 +26,11 @@ export default Home;
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
+    height: "100%",
+    paddingHorizontal: 20,
+    width: "100%",
     backgroundColor: "#AF69EE",
     alignItems: "center",
-    height: "100%",
   },
 });

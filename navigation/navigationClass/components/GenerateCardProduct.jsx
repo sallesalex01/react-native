@@ -1,23 +1,22 @@
-import { StyleSheet, SafeAreaView, FlatList, View } from "react-native";
+import { StyleSheet, SafeAreaView, FlatList, View, Text } from "react-native";
 import React from "react";
 import CardProduto from "./CardProduto";
 
-const GenerateCardProduct = ({ navigation, DATA }) => {
-  console.log(DATA);
+const GenerateCardProduct = ({ navigation, dados, funcaoAleatoria }) => {
   return (
-    <View style={{ flex: 1, width: "100" }}>
-      <FlatList
-        style={{ flex: 1, backgroundColor: "blue" }}
-        data={DATA}
-        renderItem={({ item }) => (
-          <CardProduto navigation={navigation} data={item} />
-        )}
-        keyExtractor={(item) => item.id}
-      />
-    </View>
+    <FlatList
+      style={{ flex: 1, width: "100%" }}
+      data={dados}
+      renderItem={({ item }) => (
+        <CardProduto
+          navigation={navigation}
+          data={item}
+          funcao={() => funcaoAleatoria(item)}
+        />
+      )}
+      keyExtractor={(item) => item.id}
+    />
   );
 };
 
 export default GenerateCardProduct;
-
-const styles = StyleSheet.create({});

@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "nome": "Geladeira eletrolux",
+    "preco": 1000,
+    "imagem": "https://electrolux.vtexassets.com/arquivos/ids/218791/Refrigerator_IB45_Perspective_Electrolux_Portuguese-detalhe1.jpg?v=637836507941100000"
+  },
+  {
+    "id": 2,
+    "nome": "Geladeira eletrolux",
+    "preco": 1000,
+    "imagem": "https://electrolux.vtexassets.com/arquivos/ids/218791/Refrigerator_IB45_Perspective_Electrolux_Portuguese-detalhe1.jpg?v=637836507941100000"
+  },
+  {
+    "id": 3,
+    "nome": "Geladeira eletrolux",
+    "preco": 1000,
+    "imagem": "https://electrolux.vtexassets.com/arquivos/ids/218791/Refrigerator_IB45_Perspective_Electrolux_Portuguese-detalhe1.jpg?v=637836507941100000"
+  },
+  {
+    "id": 4,
+    "nome": "Fogão electrolux",
+    "preco": 1500,
+    "imagem": "https://electrolux.vtexassets.com/arquivos/ids/218791/Stove_IB45_Perspective_Electrolux_Portuguese-detalhe1.jpg?v=637836507941100001"
+  },
+  {
+    "id": 5,
+    "nome": "Máquina de lavar electrolux",
+    "preco": 1200,
+    "imagem": "https://electrolux.vtexassets.com/arquivos/ids/218791/WashingMachine_IB45_Perspective_Electrolux_Portuguese-detalhe1.jpg?v=637836507941100002"
+  }
+]
