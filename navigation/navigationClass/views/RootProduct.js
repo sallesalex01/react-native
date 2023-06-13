@@ -11,10 +11,14 @@ const RootProduct = ({ route }) => {
   const [estado, setEstado] = useState(dados);
 
   useEffect(() => {
+    setEstado("");
+  }, []);
+
+  useEffect(() => {
     setEstado(dados);
   }, [dados]);
 
-  console.log(dados.id);
+  console.log("Root product dados: ", dados.id);
 
   return (
     <BottomTab.Navigator>

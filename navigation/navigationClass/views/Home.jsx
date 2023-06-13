@@ -8,8 +8,8 @@ const Home = ({ navigation, route }) => {
   const [dados, setDados] = useState(dadosLoja);
 
   const NavigateToProduct = (produto) => {
-    navigation.navigate("RootProduct", produto);
-    console.log(produto.id);
+    navigation.navigate("RootProduct", { screen: "Product", params: produto });
+    console.log("Produto vindo da Home: ", produto.id);
   };
 
   return (
