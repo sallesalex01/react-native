@@ -5,7 +5,7 @@ import CardProduto from "./CardProduto";
 const GenerateCardProduct = ({ navigation, dados, onCardClick }) => {
   return (
     <FlatList
-      style={{ flex: 1, width: "100%" }}
+      style={{ flex: 1, width: "100%", marginTop: 20 }}
       data={dados}
       renderItem={({ item }) => (
         <CardProduto

@@ -1,33 +1,22 @@
-import { StyleSheet, Text, View } from "react-native";
-import { useState, useEffect } from "react";
+import { StyleSheet } from "react-native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import React from "react";
 import InfoProduto from "../components/InfoProduto";
+import InfoDetalhadaProduto from "../components/InfoDetalhadaProduto";
 
 const BottomTab = createBottomTabNavigator();
 
-const RootProduct = ({ route }) => {
+const RootProduct = ({ navigation, route }) => {
   let dados = route.params;
-  const [estado, setEstado] = useState(dados);
-
-  useEffect(() => {
-    setEstado("");
-  }, []);
-
-  useEffect(() => {
-    setEstado(dados);
-  }, [dados]);
-
-  console.log("Root product dados: ", dados.id);
 
   return (
     <BottomTab.Navigator>
-      <BottomTab.Screen
-        name="Product"
-        initialParams={estado}
-        component={InfoProduto}
-        options={{ headerShown: true }}
-      />
+      <BottomTab.Screen name="Produto">
+        {() => <InfoProduto navigation={navigation} data={dados} />}
+      </BottomTab.Screen>
+      <BottomTab.Screen name="Informações">
+        {() => <InfoDetalhadaProduto navigation={navigation} data={dados} />}
+      </BottomTab.Screen>
     </BottomTab.Navigator>
   );
 };

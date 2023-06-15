@@ -1,5 +1,5 @@
-import { View, Text, StyleSheet, Button } from "react-native";
-import { useState, useEffect } from "react";
+import { View, StyleSheet } from "react-native";
+import { useState } from "react";
 import dadosLoja from "../utils/dadosLoja";
 import React from "react";
 import GenerateCardProduct from "../components/GenerateCardProduct";
@@ -8,7 +8,7 @@ const Home = ({ navigation, route }) => {
   const [dados, setDados] = useState(dadosLoja);
 
   const NavigateToProduct = (produto) => {
-    navigation.navigate("RootProduct", { screen: "Product", params: produto });
+    navigation.navigate("RootProduct", produto);
     console.log("Produto vindo da Home: ", produto.id);
   };
 

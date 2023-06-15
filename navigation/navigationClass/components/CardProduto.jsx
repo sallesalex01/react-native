@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
   imageProduto: {
     width: "50%",
     height: "100%",
-    resizeMode: "cover",
+    resizeMode: "center",
     borderRadius: 5,
   },
   productInfo: {

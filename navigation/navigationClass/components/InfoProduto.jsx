@@ -1,20 +1,28 @@
-import { StyleSheet, Text, View, Button } from "react-native";
-import React, { useEffect, useState } from "react";
+import { StyleSheet, Text, View, Button, Image } from "react-native";
 
-const InfoProduto = ({ navigation, route }) => {
-  const [piroca, setPiroca] = useState();
-
-  let qualquerCoisa = route.params;
-
-  useEffect(() => {
-    setPiroca(qualquerCoisa);
-  }, [qualquerCoisa]);
-  console.log("InfoProduto dados:", piroca);
+const InfoProduto = ({ navigation, data }) => {
+  const { nome, imagem, descricao } = data;
 
   return (
-    <View>
+    <View style={{ width: "100%", height: "100%", backgroundColor: "#CDCDCD" }}>
+      <View
+        style={{
+          width: "100%",
+          height: "80%",
+          backgroundColor: "#fff",
+          marginTop: 20,
+        }}
+      >
+        <Text style={{ fontSize: 25, fontWeight: "bold" }}>{nome}</Text>
+        <Image
+          style={{ width: "100%", height: "50%", resizeMode: "center" }}
+          source={{
+            uri: imagem,
+          }}
+        />
+        <Text style={{ fontSize: 18, fontWeight: "normal" }}>{descricao}</Text>
+      </View>
       <Button title="Back" onPress={() => navigation.goBack()} />
-      <Text>Data: {qualquerCoisa.id}</Text>
     </View>
   );
 };
