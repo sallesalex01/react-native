@@ -1,4 +1,4 @@
-import { View, StyleSheet } from "react-native";
+import { View, StyleSheet, Text } from "react-native";
 import { useState } from "react";
 import dadosLoja from "../utils/dadosLoja";
 import React from "react";
@@ -14,6 +14,7 @@ const Home = ({ navigation, route }) => {
 
   return (
     <View style={styles.container}>
+      <Text style={styles.textAnuncio}>Produtos mais vendidos</Text>
       <GenerateCardProduct
         navigation={navigation}
         dados={dados}
@@ -32,5 +33,11 @@ const styles = StyleSheet.create({
     width: "100%",
     backgroundColor: "#AF69EE",
     alignItems: "center",
+  },
+  textAnuncio: {
+    fontSize: 25,
+    fontWeight: "bold",
+    marginTop: 20,
+    marginBottom: 10,
   },
 });

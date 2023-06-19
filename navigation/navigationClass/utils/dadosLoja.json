@@ -1,11 +1,11 @@
 [
   {
     "id": 1,
-    "nome": "Geladeira eletrolux",
+    "nome": "Geladeira Electrolux",
     "preco": 1000,
     "imagem": "https://electrolux.vtexassets.com/arquivos/ids/218791/Refrigerator_IB45_Perspective_Electrolux_Portuguese-detalhe1.jpg?v=637836507941100000",
-    "descricao": "Uma geladeira de alta qualidade da marca Eletrolux.",
-    "especificacoesDetalhadas": "Capacidade: 500 litros,Dimensões: 180cm x 70cm x 80cm,Peso: 100kg,Cor: Branca,Classificação Energética: A+",
+    "descricao": "Uma geladeira de alta qualidade da marca Electrolux.",
+    "especificacoesDetalhadas": "Capacidade: 500 litros, Dimensões: 180cm x 70cm x 80cm, Peso: 100kg, Cor: Branca, Classificação Energética: A+",
     "informacoesDoVendedor": {
       "nome": "João",
       "imagem": "https://cdn-icons-png.flaticon.com/512/1909/1909693.png",
@@ -44,11 +44,11 @@
   },
   {
     "id": 2,
-    "nome": "Fogão electrolux",
+    "nome": "Fogão Electrolux",
     "preco": 1500,
     "imagem": "https://electrolux.vtexassets.com/arquivos/ids/213515-1200-1200?v=637715649539800000&width=1200&height=1200&aspect=true",
-    "descricao": "Um fogão moderno e eficiente da marca Eletrolux.",
-    "especificacoesDetalhadas": "Tipo de Fogão: Piso,Quantidade de Bocas: 4,Acendimento: Automático,Potência dos Queimadores: 2000W,Voltagem: 110V",
+    "descricao": "Um fogão moderno e eficiente da marca Electrolux.",
+    "especificacoesDetalhadas": "Tipo de Fogão: Piso, Quantidade de Bocas: 4, Acendimento: Automático, Potência dos Queimadores: 2000W, Voltagem: 110V",
     "informacoesDoVendedor": {
       "nome": "Maria Dolores Da Silva",
       "imagem": "https://cdn-icons-png.flaticon.com/512/1909/1909693.png",
@@ -75,11 +75,11 @@
   },
   {
     "id": 3,
-    "nome": "Máquina de lavar electrolux",
+    "nome": "Máquina de Lavar Electrolux",
     "preco": 1200,
     "imagem": "https://brastemp.vtexassets.com/arquivos/ids/234171/Brastemp_Lavadora_BWK12B9_Imagem_Frontal_1.jpg?v=638119860394600000",
-    "descricao": "Uma máquina de lavar de alta qualidade da marca Eletrolux.",
-    "especificacoesDetalhadas": "Capacidade de Lavagem: 10kg,Programas de Lavagem: 12,Velocidade de Centrifugação: 1200 RPM,Consumo de Água: 150 litros/ciclo,Consumo de Energia: 0.85 kWh",
+    "descricao": "Uma máquina de lavar de alta qualidade da marca Electrolux.",
+    "especificacoesDetalhadas": "Capacidade de Lavagem: 10kg, Programas de Lavagem: 12, Velocidade de Centrifugação: 1200 RPM, Consumo de Água: 150 litros/ciclo, Consumo de Energia: 0.85 kWh",
     "informacoesDoVendedor": {
       "nome": "Pedro",
       "imagem": "https://cdn-icons-png.flaticon.com/512/1909/1909693.png",
@@ -113,6 +113,135 @@
         "dataDuvida": "2023-06-18",
         "duvida": "Qual o consumo de água médio por ciclo de lavagem?",
         "resposta": "O consumo de água médio por ciclo de lavagem é de 150 litros."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "nome": "Televisor Samsung",
+    "preco": 2500,
+    "imagem": "https://static.ebomdecomprar.com.br/ebomdecomprar/620d09b2e6b9120220216142658_2.jpeg",
+    "descricao": "Um televisor de alta resolução da marca Samsung.",
+    "especificacoesDetalhadas": "Tamanho da Tela: 43 polegadas, Resolução: Full HD (1920 x 1080), Tecnologia de Tela: LED, Conexões: HDMI, USB, Wi-Fi",
+    "informacoesDoVendedor": {
+      "nome": "Lucas",
+      "imagem": "https://cdn-icons-png.flaticon.com/512/1909/1909693.png",
+      "telefone": "999999999",
+      "email": "lucas@example.com",
+      "nota": 4.5
+    },
+    "comentarios": [
+      {
+        "autor": "Ana",
+        "dataComentario": "2023-06-12",
+        "nota": 5,
+        "comentario": "Imagem perfeita! Recomendo esse televisor para todos."
+      },
+      {
+        "autor": "Carlos",
+        "dataComentario": "2023-06-11",
+        "nota": 4,
+        "comentario": "Ótimo televisor, mas o som poderia ser melhor."
+      }
+    ],
+    "duvidas": [
+      {
+        "usuario": "Fernanda",
+        "dataDuvida": "2023-06-19",
+        "duvida": "Esse televisor possui conexão Wi-Fi?",
+        "resposta": "Sim, o televisor possui conexão Wi-Fi."
+      },
+      {
+        "usuario": "Mariana",
+        "dataDuvida": "2023-06-18",
+        "duvida": "Quantas portas HDMI o televisor possui?",
+        "resposta": "O televisor possui 2 portas HDMI."
+      }
+    ]
+  },
+    {
+    "id": 5,
+    "nome": "Televisor Samsung",
+    "preco": 2500,
+    "imagem": "https://static.ebomdecomprar.com.br/ebomdecomprar/620d09b2e6b9120220216142658_2.jpeg",
+    "descricao": "Um televisor de alta resolução da marca Samsung.",
+    "especificacoesDetalhadas": "Tamanho da Tela: 43 polegadas, Resolução: Full HD (1920 x 1080), Tecnologia de Tela: LED, Conexões: HDMI, USB, Wi-Fi",
+    "informacoesDoVendedor": {
+      "nome": "Lucas",
+      "imagem": "https://cdn-icons-png.flaticon.com/512/1909/1909693.png",
+      "telefone": "999999999",
+      "email": "lucas@example.com",
+      "nota": 4.5
+    },
+    "comentarios": [
+      {
+        "autor": "Ana",
+        "dataComentario": "2023-06-12",
+        "nota": 5,
+        "comentario": "Imagem perfeita! Recomendo esse televisor para todos."
+      },
+      {
+        "autor": "Carlos",
+        "dataComentario": "2023-06-11",
+        "nota": 4,
+        "comentario": "Ótimo televisor, mas o som poderia ser melhor."
+      }
+    ],
+    "duvidas": [
+      {
+        "usuario": "Fernanda",
+        "dataDuvida": "2023-06-19",
+        "duvida": "Esse televisor possui conexão Wi-Fi?",
+        "resposta": "Sim, o televisor possui conexão Wi-Fi."
+      },
+      {
+        "usuario": "Mariana",
+        "dataDuvida": "2023-06-18",
+        "duvida": "Quantas portas HDMI o televisor possui?",
+        "resposta": "O televisor possui 2 portas HDMI."
+      }
+    ]
+  },
+    {
+    "id": 6,
+    "nome": "Televisor Samsung",
+    "preco": 2500,
+    "imagem": "https://static.ebomdecomprar.com.br/ebomdecomprar/620d09b2e6b9120220216142658_2.jpeg",
+    "descricao": "Um televisor de alta resolução da marca Samsung.",
+    "especificacoesDetalhadas": "Tamanho da Tela: 43 polegadas, Resolução: Full HD (1920 x 1080), Tecnologia de Tela: LED, Conexões: HDMI, USB, Wi-Fi",
+    "informacoesDoVendedor": {
+      "nome": "Lucas",
+      "imagem": "https://cdn-icons-png.flaticon.com/512/1909/1909693.png",
+      "telefone": "999999999",
+      "email": "lucas@example.com",
+      "nota": 4.5
+    },
+    "comentarios": [
+      {
+        "autor": "Ana",
+        "dataComentario": "2023-06-12",
+        "nota": 5,
+        "comentario": "Imagem perfeita! Recomendo esse televisor para todos."
+      },
+      {
+        "autor": "Carlos",
+        "dataComentario": "2023-06-11",
+        "nota": 4,
+        "comentario": "Ótimo televisor, mas o som poderia ser melhor."
+      }
+    ],
+    "duvidas": [
+      {
+        "usuario": "Fernanda",
+        "dataDuvida": "2023-06-19",
+        "duvida": "Esse televisor possui conexão Wi-Fi?",
+        "resposta": "Sim, o televisor possui conexão Wi-Fi."
+      },
+      {
+        "usuario": "Mariana",
+        "dataDuvida": "2023-06-18",
+        "duvida": "Quantas portas HDMI o televisor possui?",
+        "resposta": "O televisor possui 2 portas HDMI."
       }
     ]
   }

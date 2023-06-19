@@ -24,7 +24,7 @@ const ComentariosProduto = ({ data, navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#CDCDCD",
+    backgroundColor: "#AF69EE",
     padding: 20,
   },
   goBackButton: {
