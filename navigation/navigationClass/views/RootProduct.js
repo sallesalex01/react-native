@@ -53,7 +53,7 @@ const RootProduct = ({ navigation, route }) => {
           ),
         }}
       >
-        {() => <ComentariosProduto data={dados} />}
+        {() => <ComentariosProduto data={dados} navigation={navigation} />}
       </BottomTab.Screen>
       <BottomTab.Screen
         name="Duvidas"
@@ -63,7 +63,7 @@ const RootProduct = ({ navigation, route }) => {
           ),
         }}
       >
-        {() => <DuvidasProduto data={dados} />}
+        {() => <DuvidasProduto data={dados} navigation={navigation} />}
       </BottomTab.Screen>
     </BottomTab.Navigator>
   );
