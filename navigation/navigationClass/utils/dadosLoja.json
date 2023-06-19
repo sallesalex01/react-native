@@ -5,13 +5,42 @@
     "preco": 1000,
     "imagem": "https://electrolux.vtexassets.com/arquivos/ids/218791/Refrigerator_IB45_Perspective_Electrolux_Portuguese-detalhe1.jpg?v=637836507941100000",
     "descricao": "Uma geladeira de alta qualidade da marca Eletrolux.",
-    "especificações_detalhadas": "Capacidade: 500 litros,Dimensões: 180cm x 70cm x 80cm,Peso: 100kg,Cor: Branca,Classificação Energética: A+",
-    "informações_do_vendedor": {
+    "especificacoesDetalhadas": "Capacidade: 500 litros,Dimensões: 180cm x 70cm x 80cm,Peso: 100kg,Cor: Branca,Classificação Energética: A+",
+    "informacoesDoVendedor": {
       "nome": "João",
+      "imagem": "https://cdn-icons-png.flaticon.com/512/1909/1909693.png",
       "telefone": "123456789",
       "email": "joao@example.com",
       "nota": 4
-    }
+    },
+    "comentarios": [
+      {
+        "autor": "Maria",
+        "dataComentario": "2023-06-18",
+        "nota": 5,
+        "comentario": "Ótima geladeira! Estou muito satisfeita com a compra."
+      },
+      {
+        "autor": "Carlos",
+        "dataComentario": "2023-06-17",
+        "nota": 4,
+        "comentario": "A geladeira atendeu todas as minhas expectativas. Recomendo!"
+      }
+    ],
+    "duvidas": [
+      {
+        "usuario": "Ana",
+        "dataDuvida": "2023-06-19",
+        "duvida": "Essa geladeira possui garantia?",
+        "resposta": "Sim, a geladeira possui garantia de 1 ano."
+      },
+      {
+        "usuario": "Paulo",
+        "dataDuvida": "2023-06-18",
+        "duvida": "A geladeira vem com manual de instruções?",
+        "resposta": "Sim, a geladeira acompanha um manual de instruções detalhado."
+      }
+    ]
   },
   {
     "id": 2,
@@ -19,13 +48,30 @@
     "preco": 1500,
     "imagem": "https://electrolux.vtexassets.com/arquivos/ids/213515-1200-1200?v=637715649539800000&width=1200&height=1200&aspect=true",
     "descricao": "Um fogão moderno e eficiente da marca Eletrolux.",
-    "especificações_detalhadas": "Tipo de Fogão: Piso,Quantidade de Bocas: 4,Acendimento: Automático,Potência dos Queimadores: 2000W,Voltagem: 110V",
-    "informações_do_vendedor": {
-      "nome": "Maria",
+    "especificacoesDetalhadas": "Tipo de Fogão: Piso,Quantidade de Bocas: 4,Acendimento: Automático,Potência dos Queimadores: 2000W,Voltagem: 110V",
+    "informacoesDoVendedor": {
+      "nome": "Maria Dolores Da Silva",
+      "imagem": "https://cdn-icons-png.flaticon.com/512/1909/1909693.png",
       "telefone": "987654321",
       "email": "maria@example.com",
       "nota": 5
-    }
+    },
+    "comentarios": [
+      {
+        "autor": "Luiza",
+        "dataComentario": "2023-06-16",
+        "nota": 5,
+        "comentario": "O fogão é excelente! Fácil de usar e muito bonito."
+      }
+    ],
+    "duvidas": [
+      {
+        "usuario": "Rafael",
+        "dataDuvida": "2023-06-19",
+        "duvida": "Qual o prazo de entrega para São Paulo?",
+        "resposta": "O prazo de entrega para São Paulo é de 5 dias úteis."
+      }
+    ]
   },
   {
     "id": 3,
@@ -33,12 +79,41 @@
     "preco": 1200,
     "imagem": "https://brastemp.vtexassets.com/arquivos/ids/234171/Brastemp_Lavadora_BWK12B9_Imagem_Frontal_1.jpg?v=638119860394600000",
     "descricao": "Uma máquina de lavar de alta qualidade da marca Eletrolux.",
-    "especificações_detalhadas": "Capacidade de Lavagem: 10kg,Programas de Lavagem: 12,Velocidade de Centrifugação: 1200 RPM,Consumo de Água: 150 litros/ciclo,Consumo de Energia: 0.85 kWh",
-    "informações_do_vendedor": {
+    "especificacoesDetalhadas": "Capacidade de Lavagem: 10kg,Programas de Lavagem: 12,Velocidade de Centrifugação: 1200 RPM,Consumo de Água: 150 litros/ciclo,Consumo de Energia: 0.85 kWh",
+    "informacoesDoVendedor": {
       "nome": "Pedro",
+      "imagem": "https://cdn-icons-png.flaticon.com/512/1909/1909693.png",
       "telefone": "555555555",
       "email": "pedro@example.com",
       "nota": 3
-    }
+    },
+    "comentarios": [
+      {
+        "autor": "Luiza",
+        "dataComentario": "2023-06-14",
+        "nota": 4,
+        "comentario": "A máquina de lavar funciona muito bem. Estou satisfeita com o produto."
+      },
+      {
+        "autor": "Roberto",
+        "dataComentario": "2023-06-13",
+        "nota": 2,
+        "comentario": "Tive problemas com a máquina de lavar logo no primeiro uso. Precisei chamar assistência técnica."
+      }
+    ],
+    "duvidas": [
+      {
+        "usuario": "Fernanda",
+        "dataDuvida": "2023-06-19",
+        "duvida": "A máquina de lavar possui opção de lavagem a seco?",
+        "resposta": "Não, a máquina de lavar não possui opção de lavagem a seco."
+      },
+      {
+        "usuario": "Mariana",
+        "dataDuvida": "2023-06-18",
+        "duvida": "Qual o consumo de água médio por ciclo de lavagem?",
+        "resposta": "O consumo de água médio por ciclo de lavagem é de 150 litros."
+      }
+    ]
   }
 ]
