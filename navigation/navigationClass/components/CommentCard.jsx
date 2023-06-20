@@ -2,7 +2,7 @@ import React from "react";
 import { StyleSheet, View, Text } from "react-native";
 
 const CommentCard = ({ comment }) => {
-  const { autor, dataComentario, nota, comentario, resposta } = comment;
+  const { autor, dataComentario, nota, comentario } = comment;
 
   return (
     <View style={styles.container}>

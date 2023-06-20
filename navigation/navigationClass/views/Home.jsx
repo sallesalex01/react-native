@@ -9,7 +9,6 @@ const Home = ({ navigation, route }) => {
 
   const NavigateToProduct = (produto) => {
     navigation.navigate("RootProduct", produto);
-    console.log("Produto vindo da Home: ", produto.id);
   };
 
   return (
